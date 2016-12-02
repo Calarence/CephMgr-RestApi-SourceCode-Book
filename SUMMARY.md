@@ -7,6 +7,6 @@
     * [代码结构](代码结构.md)
     * [url部分学习](url部分学习.md)
     * [view部分](view部分.md)
-        * [test](test.md)
+        * [view部分类图](test.md)
 * [TODO](todo.md)
 
