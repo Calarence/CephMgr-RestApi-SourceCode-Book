@@ -10,7 +10,7 @@
         * [view部分类图](test.md)
         * [RequestViewSet类源码学习](requestviewset类源码学习.md)
         * [CrushRuleSetViewSet](crushrulesetviewset.md)
-        * CrushRuleViewSet
+        * [CrushRuleViewSet](crushruleviewset.md)
         * ConfigViewSet
         * PoolViewSet
         * ServerViewSet

@@ -16,5 +16,11 @@ _**rules获取过程**_
 
 上图大体表示出了获取rules流程,代码调用到最好，用到了ceph\_state,它是一个c++封装的插件，负责从ceph-mgr daemon获取集群状态，由于我不懂c++，并没有继续深究下去，但ceph\_state是很重要的部分，可以说是连接ceph-mgr daemon与api的桥梁，以后让同事帮忙看一下这部分。
 
-------------------------------------
+---
+
+_**osds\_by\_rule\_id获取流程**_
+
+![](/assets/osds_by_rule_id.png)
+
+对比上图发现，代码调用到最好都是通过ceph\_state去获取ceph 集群状态。
 
