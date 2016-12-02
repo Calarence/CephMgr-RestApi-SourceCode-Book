@@ -56,5 +56,33 @@
 
 def cancel\(self, request\_id\):现在这个方法被注释掉了，有待跟作者沟通。
 
---------------------------------------------------
+---
+
+MgrClient有一个\_dump\_request方法，用于将RequestCollection返回的结果，封装成JSON 格式，然后返回给RequestViewSet，具体代码如下：
+
+`def _dump_request(self, request):`
+
+`        """UserRequest to JSON-serializable form"""`
+
+`        return {`
+
+`            'id': request.id,`
+
+`            'state': request.state,`
+
+`            'error': request.error,`
+
+`            'error_message': request.error_message,`
+
+`            'status': request.status,`
+
+`            'headline': request.headline,`
+
+`            'requested_at': request.requested_at,`
+
+`            'completed_at': request.completed_at`
+
+`        }`
+
+
 
