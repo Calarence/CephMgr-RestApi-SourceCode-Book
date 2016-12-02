@@ -2,6 +2,8 @@
 
 * ceph-mgr与calamari api对比
 
+* request.submit\(\)方法
+
 
 
 
