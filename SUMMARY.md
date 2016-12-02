@@ -11,8 +11,8 @@
         * [RequestViewSet类源码学习](requestviewset类源码学习.md)
         * [CrushRuleSetViewSet](crushrulesetviewset.md)
         * [CrushRuleViewSet](crushruleviewset.md)
-        * ConfigViewSet
-        * PoolViewSet
+        * [ConfigViewSet](configviewset.md)
+        * [PoolViewSet](poolviewset.md)
         * ServerViewSet
         * MonViewSet
 * [TODO](todo.md)
