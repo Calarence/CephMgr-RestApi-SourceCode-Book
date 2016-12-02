@@ -2,5 +2,11 @@
 
 用来追踪和管理一些比较耗时的操作\(如创建Pool\)。这种类型的请求到达时，服务会立即返回202状态码和requestID，然后根据requestID可以了解该操作的进展以及完成情况。可以根据‘complete’、‘submitted’关键字对request进行过滤;也可以根据requestID取消某个操作。
 
+---
 
+代码调用情况如下所示：
+
+![](/assets/userRequest.png)
+
+由图中红框所示，RequestViewSet最终会调用RequestCollection里的代码，所以只需要关心RequestCollection即可。
 
