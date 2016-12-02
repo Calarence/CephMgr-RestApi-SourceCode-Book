@@ -4,6 +4,8 @@
 
 * request.submit\(\)方法
 
+* osd map数据形式
+
 
 
 
