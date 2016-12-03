@@ -14,9 +14,9 @@ PoolViewSet类图如下所示，重点关注前五个。
 
 `return Response(PoolSerializer(pools, many=True).data)`
 
-**To get the default values which will be used for any fields omitted from a POST, do a GET with the ?defaults argument.  The returned pool object will contain all attributes,but those without static defaults will be set to null. 这段话解释了self.\_defaults的作用。**
+**To get the default values which will be used for any fields omitted from a POST, do a GET with the ?defaults argument.  The returned pool object will contain all attributes,but those without static defaults will be set to null. 这段话解释了self.\_defaults的作用。默认值取得过程如下图所示：**
 
-
+![](/assets/poolrequest._defaults.png)
 
 假设请求中不带有‘defaults’字段,来看一下`pools = [PoolDataObject(p) for p in self.client.list(POOL, {})]这行代码的执行流程。`
 
