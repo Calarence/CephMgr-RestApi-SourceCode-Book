@@ -26,5 +26,15 @@ PoolViewSet类图如下所示，重点关注前五个。
 
 从上图可以看出，Pool依然是从OsdMap取得，而OsdMap是经过ceph\_state“中间件”从ceph集群获得。
 
----------------------------
+---
+
+根据Pool\_id获取某个Pool,代码如下所示：
+
+`def retrieve(self, request, pool_id):`
+
+`        pool = PoolDataObject(self.client.get(POOL, int(pool_id)))`
+
+`        return Response(PoolSerializer(pool).data)`
+
+代码调用流程如下图所示：
 
