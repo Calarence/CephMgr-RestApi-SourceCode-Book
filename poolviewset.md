@@ -4,6 +4,8 @@ PoolViewSet类图如下所示，重点关注前五个。
 
 ---
 
+获取Pool列表，代码如下所示：
+
 `def list(self, request):`
 
 `if 'defaults' in request.GET:`
