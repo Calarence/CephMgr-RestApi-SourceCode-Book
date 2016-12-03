@@ -13,7 +13,7 @@
         * [CrushRuleViewSet](crushruleviewset.md)
         * [ConfigViewSet](configviewset.md)
         * [PoolViewSet](poolviewset.md)
-        * ServerViewSet
+        * [ServerViewSet](serverviewset.md)
         * MonViewSet
 * [TODO](todo.md)
 
