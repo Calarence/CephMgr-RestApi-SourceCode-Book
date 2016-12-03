@@ -30,11 +30,15 @@ PoolViewSet类图如下所示，重点关注前五个。
 
 根据Pool\_id获取某个Pool,代码如下所示：
 
-`def retrieve(self, request, pool_id):`
+`def retrieve(self, request, pool_id):`
 
-`        pool = PoolDataObject(self.client.get(POOL, int(pool_id)))`
+`pool = PoolDataObject(self.client.get(POOL, int(pool_id)))`
 
-`        return Response(PoolSerializer(pool).data)`
+`return Response(PoolSerializer(pool).data)`
 
 代码调用流程如下图所示：
+
+![](/assets/poolRetrive.png)
+
+
 
