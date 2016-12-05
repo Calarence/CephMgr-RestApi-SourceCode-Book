@@ -12,9 +12,10 @@ def retrieve(self, request, mon_id):
          return Response(self.serializer_class(DataObject(mon)).data)
 ```
 
-  `def list(self, request):`
 
-        `mons = self._get_mons()`
+
+    def list(self, request):
+        mons = self._get_mons()`
 
         `return Response(self.serializer_class([DataObject(m) for m in mons],many=True).data)`
 
