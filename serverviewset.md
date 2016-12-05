@@ -22,13 +22,11 @@ ServerViewSet包括两个方法：retrieve\(request,fqdn\)：根据fqdn获取指
 
 list代码如下
 
-`def list(self, request):servers = self.client.server_list()`
+`def list(self, request):`
 
-`return Response(self.serializer_class(`
+`servers = self.client.server_list()`
 
-`[DataObject(s) for s in servers],`
-
-`many=True).data)`
+`return Response(self.serializer_class([DataObject(s) for s in servers],many=True).data)`
 
 代码调用过程如下图所示：
 
