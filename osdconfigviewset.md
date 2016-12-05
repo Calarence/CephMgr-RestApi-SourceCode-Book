@@ -37,17 +37,27 @@
 
 submit具体操作如下：
 
-`def submit(self):`
+`def submit(self):`
 
-`"""Start remote execution phase by publishing a job to salt."""`
+`"""
+Start remote execution phase by publishing a job to salt.
+"""`
 
-      `assert self.state == self.NEW`
+      `assert self.state == self.NEW
+
+\`
 
       `self._submit()`
 
-       `#将request状态改为submitted`
+       `#将request状态改为submitted
+
+\`
 
       `self.state = self.SUBMITTED`
 
 由代码可以看出核心操作是\_submit\(\)操作，流程图如下：
+
+![](/assets/_request.png)
+
+由上图可以看出command由ceph\_state发给salt master。
 
