@@ -25,5 +25,9 @@
 
 ![](/assets/getOsdMapFlags.png)
 
-------------------
+---
+
+更新flag的流程图如下所示：
+
+
 
