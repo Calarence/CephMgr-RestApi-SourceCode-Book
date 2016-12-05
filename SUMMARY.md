@@ -7,7 +7,7 @@
     * [代码结构](代码结构.md)
     * [url部分学习](url部分学习.md)
     * [view部分](view部分.md)
-        * [view部分类图](test.md)
+        * [view类图](test.md)
         * [RequestViewSet类源码学习](requestviewset类源码学习.md)
         * [CrushRuleSetViewSet](crushrulesetviewset.md)
         * [CrushRuleViewSet](crushruleviewset.md)
