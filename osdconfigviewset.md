@@ -37,3 +37,17 @@
 
 submit具体操作如下：
 
+`def submit(self):`
+
+`"""Start remote execution phase by publishing a job to salt."""`
+
+      `assert self.state == self.NEW`
+
+      `self._submit()`
+
+       `#将request状态改为submitted`
+
+      `self.state = self.SUBMITTED`
+
+由代码可以看出核心操作是\_submit\(\)操作，流程图如下：
+
