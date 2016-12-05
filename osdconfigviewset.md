@@ -1,5 +1,7 @@
 # _**OsdConfigViewSet：管理OsdMap中的flags.**_
 
+常用的flags包括pause\(unpause\)、noIn\(noOut\)、noUp\(noDown\)
+
 主要包括两个方法：
 
 > * 获取osd\_map,代码如下：
@@ -17,9 +19,7 @@
 >       response = self.client.update(OSD_MAP, None, serializer.get_data())
 >     return self._return_request(response)`
 
---------------------
-
-
+---
 
 
 
