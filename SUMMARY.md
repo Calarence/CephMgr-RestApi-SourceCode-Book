@@ -15,5 +15,6 @@
         * [ConfigViewSet](configviewset.md)
         * [ServerViewSet](serverviewset.md)
         * [MonViewSet](monviewset.md)
+        * [OsdConfigViewSet](osdconfigviewset.md)
 * [TODO](todo.md)
 
