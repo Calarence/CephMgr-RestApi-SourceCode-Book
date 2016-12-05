@@ -27,5 +27,15 @@
 
 ---
 
-更新flag的流程图如下所示：
+更新flag的流程图如下所示：![](/assets/updateOsdMapflags1.png)
+
+上图最后一步是进行了request.submit操作，首先看一下submit是如何定义的。
+
+
+
+
+
+
+
+
 
