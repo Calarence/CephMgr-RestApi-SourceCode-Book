@@ -1,6 +1,6 @@
 # _**OsdConfigViewSet：管理OsdMap中的flags.**_
 
-常用的flags包括pause\(unpause\)、noIn\(noOut\)、noUp\(noDown\)
+常用的flags包括'pause', 'noup', 'nodown', 'noout', 'noin', 'nobackfill', 'norecover', 'noscrub', 'nodeep-scrub'
 
 主要包括两个方法：
 
