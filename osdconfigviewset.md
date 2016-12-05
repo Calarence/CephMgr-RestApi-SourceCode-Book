@@ -59,5 +59,5 @@ Start remote execution phase by publishing a job to salt.
 
 ![](/assets/_request.png)
 
-由上图可以看出command由ceph\_state发给salt master。
+由上图可以看出command由ceph\_state发给salt master。  
 
