@@ -2,14 +2,17 @@
 
 两方法代码如下所示：
 
-`def retrieve(self, request, mon_id):`
 
-             `mons = self._get_mons()
-             try:
-             mon = [m for m in mons if m['name'] == mon_id][0]
-             except IndexError:
-             raise Http404("Mon '%s' not found" % mon_id)
-             return Response(self.serializer_class(DataObject(mon)).data)
+
+```
+    def retrieve(self, request, mon_id):
+         mons = self._get_mons()
+         try:
+         mon = [m for m in mons if m['name'] == mon_id][0]
+         except IndexError:
+         raise Http404("Mon '%s' not found" % mon_id)
+         return Response(self.serializer_class(DataObject(mon)).data)
+```
 
 `def list(self, request):`
 
