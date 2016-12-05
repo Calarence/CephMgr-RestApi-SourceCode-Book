@@ -35,3 +35,5 @@
 
 由上图可以看出，submit调用了\_submit\(\)方法，\_submit\(\)方法在UserRequestBase类中，没有实现，只是定义；具体实现在RadosRequest类中，然后OsdMapModifyingRequest类继承了RadosRequest，完成request.submit\(\)操作。
 
+
+
