@@ -2,7 +2,6 @@
 
 * [前言](README.md)
     * [ceph-mgr简介](ceph-mgr简介.md)
-    * [ceph-mgr现状](ceph-mgr现状.md)
 * [源码学习](chapter1.md)
     * [代码结构](代码结构.md)
     * [url部分学习](url部分学习.md)
