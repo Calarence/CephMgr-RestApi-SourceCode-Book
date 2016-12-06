@@ -44,6 +44,8 @@ PoolViewSet类图如下所示，重点关注前五个。
 
 Pool 创建流程分析：在接收创建Pool请求后，先对POST过来的数据进行检查，具体包括\_check\_crush\_ruleset、    def \_check\_pg\_num\_inside\_config\_bounds、\_check\_pgp\_less\_than\_pg\_num、\_check\_name\_unique，最后交由mgrclient进行crate操作。具体过程如下图所示：
 
+
+
 ---
 
 update操作流程如下：首先检查客户端发送过来的数据是否合法，具体包括五个检查：\_check\_name\_unique、\_check\_crush\_ruleset、\_check\_pgp\_less\_than\_pg\_num、\_check\_pg\_nums\_dont\_decrease、\_check\_pg\_num\_inside\_config\_bounds，如出现错误直接返回错误信息；检查无误后，由PoolRequestFactory构造update命令然后交由ceph-state发送给salt master，同时返回request\_id,我们可以根据request\_id来跟踪该请求的状态。流程图如下：
@@ -62,7 +64,8 @@ PoolRequestFactory中的delete操作具体如下：
 
 > * 根据pool\_id获取pool\_name
 > 
-> * 构造ceph命令 \('osd pool delete', {'pool': pool\_name, 'pool2': pool\_name,  'sure': '--yes-i-really-really-mean-it'}\)
+> * 构造ceph命令 \('osd pool delete', {'pool': pool\_name, 'pool2': pool\_name,
+>   'sure': '--yes-i-really-really-mean-it'}\)
 > 
 > * 返回OsdMapModifyingRequest
 
