@@ -44,7 +44,15 @@ PoolViewSet类图如下所示，重点关注前五个。
 
 Pool 创建流程分析：在接收创建Pool请求后，先对POST过来的数据进行检查，具体包括\_check\_crush\_ruleset、    def \_check\_pg\_num\_inside\_config\_bounds、\_check\_pgp\_less\_than\_pg\_num、\_check\_name\_unique，最后交由mgrclient进行crate操作。具体过程如下图所示：
 
+![](/assets/PoolCreate.png)
 
+有关request submit的具体操作见OsdConfigViewSet部分。
+
+PoolRequestFactory中create操作
+
+> * 组装ceph命令，如 \('osd pool create', {'pool': attributes\['name'\],   'pg\_num': attributes\['pg\_num'\]}\)
+> 
+> * 将ceph命令构造成PoolCreatingRequest
 
 ---
 
