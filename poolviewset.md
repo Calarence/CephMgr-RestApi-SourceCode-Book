@@ -50,7 +50,21 @@ update操作流程如下：首先检查客户端发送过来的数据是否合�
 
 ![](/assets/poolUpdate.png)关于submit的操作已经在OsdConfigViewSet中介绍过，这里略过，重点关注一下OsdMapModifyingRequest以及PgCreatingRequest
 
-什么时候会进行PgCreatingRequest操作呢？当请求参数中包含pgp\_num或者pg\_num，这时会返回`PgCreatingRequest`，并删除请求参数中的pgp\_num或pg\_num,再进行OsdMapModifyingRequest操作。
+什么时候会进行PgCreatingRequest操作呢？当请求参数中包含pgp\_num或者pg\_num，这时会返回`PgCreatingRequest，并删除请求参数中的pgp_num或pg_num,再进行OsdMapModifyingRequest操作。`
 
-------------------------
+---
+
+delete操作：
+
+![](/assets/PoolDelete.png)
+
+PoolRequestFactory中的delete操作具体如下：
+
+> * 根据pool\_id获取pool\_name
+> 
+> * 构造ceph命令 \('osd pool delete', {'pool': pool\_name, 'pool2': pool\_name,  'sure': '--yes-i-really-really-mean-it'}\)
+> 
+> * 返回OsdMapModifyingRequest
+
+
 
