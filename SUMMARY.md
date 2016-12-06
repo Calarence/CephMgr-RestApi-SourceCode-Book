@@ -11,10 +11,10 @@
         * [RequestViewSet类源码学习](requestviewset类源码学习.md)
         * [CrushRuleSetViewSet](crushrulesetviewset.md)
         * [CrushRuleViewSet](crushruleviewset.md)
+        * [OsdConfigViewSet](osdconfigviewset.md)
         * [PoolViewSet](poolviewset.md)
         * [ConfigViewSet](configviewset.md)
         * [ServerViewSet](serverviewset.md)
         * [MonViewSet](monviewset.md)
-        * [OsdConfigViewSet](osdconfigviewset.md)
 * [TODO](todo.md)
 

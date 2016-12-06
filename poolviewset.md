@@ -48,5 +48,5 @@ Pool 创建流程分析：在接收创建Pool请求后，先对POST过来的数�
 
 update操作流程如下：首先检查客户端发送过来的数据是否合法，具体包括五个检查：\_check\_name\_unique、\_check\_crush\_ruleset、\_check\_pgp\_less\_than\_pg\_num、\_check\_pg\_nums\_dont\_decrease、\_check\_pg\_num\_inside\_config\_bounds，如出现错误直接返回错误信息；检查无误后，由PoolRequestFactory构造update命令然后交由ceph-state发送给salt master，同时返回request\_id,我们可以根据request\_id来跟踪该请求的状态。流程图如下：
 
-
+![](/assets/poolUpdate.png)关于submit的操作已经在OsdConfigViewSet中介绍过，这里略过，重点关注一下OsdMapModifyingRequest以及PgCreatingRequest
 
