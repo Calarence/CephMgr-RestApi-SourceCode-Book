@@ -1,6 +1,5 @@
 # Summary
 
-<<<<<<< HEAD
 * [前言](README.md)
     * [ceph-mgr简介](ceph-mgr简介.md)
 * [源码学习](chapter1.md)
@@ -19,6 +18,5 @@
         * [MonViewSet](monviewset.md)
 * [后续工作计划](后续工作计划.md)
 
-=======
-* [First Chapter](chapter1.md)
->>>>>>> 0c7aef7764cb831e2f2c20b8d2140851da34f3ce
+-----
+
